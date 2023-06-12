@@ -1,0 +1,91 @@
+{
+    "create" : { 
+        "url": "http://localhost:3000/api/dogs",
+        "method":"post",
+        "body_params": {
+            "name":"scooby",
+            "breed":"bomerian_species",
+            "age":5,
+            "isGoodBoy":false
+        },
+        "result": {
+            "name": "scooby",
+            "breed": "bomerian_species",
+            "age": 5,
+            "isGoodBoy": false,
+            "_id": "6486e5aeae7d945bf72c5125",
+            "__v": 0
+        }
+    },
+    "update" : { 
+        "url": "http://localhost:3000/dogs/6486e5aeae7d945bf72c5125",
+        "method":"put",
+        "body_params": {
+            "age":3
+        },
+        "result": {
+            "_id": "6486e5aeae7d945bf72c5125",
+            "name": "scooby",
+            "breed": "bomerian_species",
+            "age": 3,
+            "isGoodBoy": false,
+            "__v": 0
+        }
+    },
+    "selectAll" : { 
+        "url": "http://localhost:3000/dogs",
+        "method":"get",
+        "result": 
+            [
+                {
+                    "_id": "64818d1b4d22078d1261bd30",
+                    "name": "scooby doo",
+                    "breed": "bomerian",
+                    "age": 2,
+                    "isGoodBoy": true,
+                    "__v": 0
+                },
+                {
+                    "_id": "6486e01c0c07ee1771d60969",
+                    "id": 5,
+                    "name": "scooby",
+                    "breed": "bomerian_species",
+                    "age": 3,
+                    "isGoodBoy": false,
+                    "__v": 0
+                },
+                {
+                    "_id": "6486e5aeae7d945bf72c5125",
+                    "name": "scooby",
+                    "breed": "bomerian_species",
+                    "age": 3,
+                    "isGoodBoy": false,
+                    "__v": 0
+                }
+            ]
+    },
+    "selectOne" : { 
+        "url": "http://localhost:3000/dogs/6486e5aeae7d945bf72c5125",
+        "method":"get",
+        "result": {
+            "_id": "6486e5aeae7d945bf72c5125",
+            "name": "scooby",
+            "breed": "bomerian_species",
+            "age": 3,
+            "isGoodBoy": false,
+            "__v": 0
+        }
+    },
+    "delete" : { 
+        "url": "http://localhost:3000/dogs/6486e5aeae7d945bf72c5125",        
+        "method":"delete",
+        "result": {
+            "_id": "6486e5aeae7d945bf72c5125",
+            "name": "scooby",
+            "breed": "bomerian_species",
+            "age": 3,
+            "isGoodBoy": false,
+            "__v": 0
+        }
+    }
+}
